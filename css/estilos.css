@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@700&display=swap');
+
+
+
+/* custom properties 
+--nombre: valor;
+*/
+
+/* variables */
+html {
+    --color-negro: #07020D;
+    --color-base: #F1E9DB;
+    --color-acento: #5DB7DE;
+    --color-marron-100: #A39B8B;
+    --color-marron-200: #716A5C;
+    }
+
+* {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; /*  */
+    }
+
+/* estilos generales */
+body {
+    background-color: var(--color-base); 
+    color: var(--color-negro); /* se hereda */
+    text-align: center; /* se hereda */
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+padding: 0;
+list-style: none;
+}
+
+li {
+display: inline-block;
+margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header {
+    background-color: var(--color-negro);
+    padding: 30px 0; /* top y bottom, left y right */
+}
+
+/* Estado en reposo */
+a.navegacion:link {
+color: var(--color-base);
+font-weight: 600;
+}
+
+/*Visitado */
+a.navegacion:visited{
+    color: var(--color-base)
+}
+
+/* Cuando pasamos el puntero por arriba */
+a.navegacion:hover{
+    color: var(--color-acento);
+}
+
+/* Cuando hacemos click sobre el link */
+a.navegacion:active{
+    color: red;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+h2 {
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: bold;
+margin: 2px;
+}
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: normal;
+margin: 3px;
+}
+
+/* Seccion bienvenida */
+#Bienvenida {
+    width: 850px;
+    height: 550px;
+    margin: 0 auto;
+    padding-top: 180px;
+    background-color: var(--color-marron-100);
+    background-image: url('../img/bienvenida_sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Bienvenida >h1 {
+    color: var(--color-base);
+    background-color: #07020da5;
+    padding: 30px 0;
+}
+
+footer {
+background-color: var(--color-marron-200);
+color: var(--color-base);
+list-style: none;
+padding: 40px 0;
+}

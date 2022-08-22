@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+   <section>
+    <h1>Mi Formulario</h1>
+<form action="" method="GET" enctype="multipart/form-data">
+<label for="nombre">Ingresá tu nombre</label>
+<input id="nombre" type="text" placeholder= "Ingresá tu nombre" required>
+
+<br><br>
+
+<label for="Mensaje">Tu mensaje</label>
+<textarea id="mensaje" name="mensaje"></textarea>
+
+<br><br>
+
+<label for="password">Password</label>
+<input type="password" name="password" id="password"
+placeholder= "Ingresá tu contraseña">
+
+<br><br>
+
+<label for="email">Email</label>
+<input type="email" placeholder= "usuario@dominio.com" required>
+
+<br><br>
+
+<label for="avatar">Foto de perfil</label>
+<input type="file"name="avatar" id="avatar">
+
+<br><br>
+
+<label for="provincia">Provincia</label>
+<select name="provincia" id="Provincia">
+    <option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
+    <option value="Buenos Aires">Buenos Aires</option>
+    <option value="Catamarca">Catamarca</option>
+    <option value="Chaco">Chaco</option>
+    <option value="Chubut">Chubut</option>
+    <option value="Córdoba">Córdoba</option>
+    <option value="Corrientes">Corrientes</option>
+    <option value="Entre Ríos">Entre Ríos</option>
+    <option value="Formosa">Formosa</option>
+    <option value="Jujuy">Jujuy</option>
+    <option value="La Pampa">La Pampa</option>
+    <option value="La Rioja">La Rioja</option>
+    <option value="Mendoza">Mendoza</option>
+    <option value="Misiones">Misiones</option>
+    <option value="Neuquén">Neuquén</option>
+    <option value="Río Negro">Río Negro</option>
+    <option value="Salta">Salta</option>
+    <option value="San Juan">San Juan</option>
+    <option value="San Luis">San Luis</option>
+    <option value="Santa Cruz">Santa Cruz</option>
+    <option value="Santa Fe">Santa Fe</option>
+    <option value="Santiago del Estero">Santiago del Estero</option>
+    <option value="Tierra del Fuego">Tierra del Fuego</option>
+    <option value="Tucuman">Tucuman</option>
+</select>
+
+<br><br><br>
+
+<label class="sr-only" for="ingresar">Darme de alta</label>
+<input type="submit" name="ingresar" id="ingresar" value="Nuevo Usuario">
+
+</form>
+
+   </section> 
+</body>
+</html>
