@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variables */
+html {
+    --color-negro: #07020D;
+    --color-base: #F1E9DB;
+    --color-acento: #5DB7DE;
+    --color-marron-100: #A39B8B;
+    --color-marron-200: #716A5C;
+    }
+
+body {
+    background-color: var(--color-negro);
+    color: var(--color-base);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Selectores por clase */
+.articulo {
+    width: 247px;
+    margin: 25px auto;
+}
+
+/* Selectores por ID */
+#novedades {
+    background-color: #8d8d8d;
+}
+
+/* Selectores compuestos y descendentes */
+/* article > div > h2 
+alcanza de manera descendente */
+
+article h2{ /*alcanza a todo */
+    color: #463957;
+}

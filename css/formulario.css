@@ -12,6 +12,7 @@ html {
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    outline: none;
 }
 
 /*Clase solo para los lectores de pantalla */
@@ -24,11 +25,35 @@ body {
 background-color: var(--color-negro);
 color: var(--color-base);
 font-family: 'Montserrat', sans-serif;
+text-align: center;
+}
+
+form {
+    width: 450px;
+    margin: 0 auto;
+
 }
 
 input, select, textarea {
-    width: 350px;
-    margin: 10px;
+    display: block;
+    width: 450px;
     padding: 8px 12px;
     font-size: 16px;
+    border: none;
+    border-bottom: 3px solid var(--color-marron-100);
+}
+
+textarea {
+    height: 150px;
+}
+
+label {
+    display: block;
+    margin: 30px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-bottom: 3px solid var(--color-acento);
 }
